@@ -1,0 +1,31 @@
+.container {
+    height: 400px;
+    width: 700px;
+    border: 2px solid green;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    align-content: flex-start;
+}
+
+.box {
+    border: 1px solid brown;
+    background-color: aqua;
+}
+
+#box1 {
+    order: 1; /* by default every items order is 0 if we increase we move forward */
+    flex-grow: 1; /* increase in width of block till view port */
+    flex-shrink: 4; /* it increases in shrink speed when we reduce the view port in inspect element */
+}
+
+#box3 {
+    order: 3;
+    flex-grow: 1;
+}
+
+#box2{
+    order: 2;
+    align-self: stretch; /* aligns the element on which this property applies */
+}
